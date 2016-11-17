@@ -1,0 +1,9 @@
+<body>
+	<h1>Edit <%= cat.name %>:</h1>
+	<hr>
+	<form action="/cats/<%= cat._id %>" method="POST">
+		<p>Name: <input type="text" name="name" value="<%= cat.name %>"></p>
+		<p>Age: <input type="text" name="age" value="<%= cat.age %>"></p>
+		<input type="submit">
+	</form>
+</body

@@ -1,0 +1,12 @@
+<head>
+	<title>Cats</title>
+</head>
+<body>
+	<h1>Cats</h1>
+	<p><a href="/cats/new">New</a></p>
+	<hr>
+	<% cats.forEach(function(cat){ %>
+		<a href="/cats/<%=cat._id%>"><%= cat.name  %></a>
+		<p><%= cat.age  %></p>
+	<% }) %>
+</body>

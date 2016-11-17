@@ -1,0 +1,8 @@
+<body>
+	<h1><%= cat.name %></h1>
+	<h2><%= cat.age %></h2>
+	<p><a href="/">Back</a> | <a href="/cats/<%= cat._id %>/edit">Edit</a></p>
+	<form action="/cats/<%= cat._id %>/destroy" method="POST">
+		<input type="submit" value="Delete">
+	</form>
+</body>
