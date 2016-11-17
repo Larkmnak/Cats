@@ -30,5 +30,5 @@ require("./config/routs")(app)
 
 //********** LISTEN **********
 app.listen(7000, function() {
-    console.log("listening on port 7000");
+    console.log("listening on port 8000");
 })
